@@ -7,10 +7,10 @@
 numb = int(input('Введите трехзначное число: '))
 sum = 0
 
-while numb > 999 or numb < 100: 
+while numb > 999 or numb < 100:
     numb = int(input('Вы ввели не трехзначное число! Введите трехзначное число: '))
-    
-temp = numb    
+
+temp = numb
 while temp > 0:
     sum += temp % 10
     temp //= 10
