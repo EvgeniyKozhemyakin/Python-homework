@@ -10,17 +10,17 @@ numberTicket = int(input('Введите номер билета: '))
 sumFirsThree = 0
 sumLastThree = 0
 
-if numberTicket > 999999 or numberTicket < 111110:
-    while numberTicket > 999999 or numberTicket < 111110:
-        print('Вы ввели неверный номер билет,пожалуйста повторите ввод')
-        numberTicket = int(input('Введите номер билета из 6 цифр: '))
-else:
-    while numberTicket > 0:
-        if numberTicket > 999:
-            sumLastThree += numberTicket % 10
-        else:
-            sumFirsThree += numberTicket % 10
-    numberTicket //= 10
+while numberTicket > 999999 or numberTicket < 100000:
+    print('Вы ввели неверный номер билет,пожалуйста повторите ввод')
+    numberTicket = int(input('Введите номер билета из 6 цифр: '))
+
+temp = numberTicket
+while temp > 0:
+    if temp > 999:
+        sumLastThree += temp % 10
+    else:
+        sumFirsThree += temp % 10
+    temp //= 10
 
 print(f'{numberTicket} -> yes'if sumFirsThree ==
       sumLastThree else f'{numberTicket} -> no')
