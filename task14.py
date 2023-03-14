@@ -5,7 +5,7 @@ n = int(input("Введите число: "))
 power_numbers = []
 i = 0
 
-while 2 ** i < n:
+while 2 ** i <= n:
     power_numbers.append(2**i)
     i += 1
 
