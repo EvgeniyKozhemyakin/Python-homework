@@ -21,7 +21,6 @@ dict_enru8 = dict.fromkeys(['J', 'X', 'Ш', 'Э', 'Ю'], 8)
 dict_enru10 = dict.fromkeys(['Q', 'Z', 'Ф', 'Щ', 'Ъ'], 10)
 dict_scrabble = dict_enru1 | dict_enru2 | dict_enru3 | dict_enru4 | dict_enru5 | dict_enru8 | dict_enru10
 
-
 word_user = (input('Введите слово: ')).upper()
 count_score = 0
 flag = True
@@ -31,9 +30,10 @@ while (flag):
         if letters not in dict_scrabble:
             word_user = (
                 input('Ошибка при вводе! Таких символов нет в игре. Введите слово: ')).upper()
-            break
+            count_score = 0           
         else:
             flag = False
-            count_score += dict_scrabble[f'{letters}']
-
+            
+for letters in word_user:
+    count_score += dict_scrabble[f'{letters}']
 print(count_score)
