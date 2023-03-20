@@ -23,5 +23,4 @@ for i in range(1, length_list + 1):
         min_dif_numb = list[i] 
         min_difference = int(math.fabs(list[i] - num))
   
-print(list)
-print(min_dif_numb)
+print(f'{list} -> {min_dif_numb} ближе всего к искомому ')
