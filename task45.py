@@ -11,7 +11,6 @@ import datetime
 
 a = datetime.datetime.now()
 
-
 def sum_divide(number):
     sum_divide, i = 1, 2
 
@@ -23,13 +22,11 @@ def sum_divide(number):
 
     return sum_divide
 
-
 k, i = 100000, 1
 while i < k:
     j = sum_divide(i)
     if i < j < k and i == sum_divide(j):
         print(f'{i} {j}')
     i += 1
-
 
 print(datetime.datetime.now() - a)
