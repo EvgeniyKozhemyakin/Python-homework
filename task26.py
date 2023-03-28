@@ -5,7 +5,7 @@
 #     A = 2; B = 3 -> 8
 # 2 2
 def exponentiation(num1, num2):
-    if num2 < 1: 
+    if num2 < 1:
         return 1
     return num1 * exponentiation(num1, num2 - 1)
 
