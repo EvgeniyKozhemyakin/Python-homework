@@ -1,0 +1,5 @@
+Иванов Иван Иванович +79031231212
+Петров Петр Иванович +79055671212
+Сидоров Семен Семменыч +79181234567
+Борисов Борис Борисович +79184031223
+к& C:/Users/1nf_5/AppData/Local/Programs/Python/Python311/python.exe "d:/web/geekbrains обучение/python/telephonebook/task 49_dict.py"
